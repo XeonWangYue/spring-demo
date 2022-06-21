@@ -1,0 +1,27 @@
+server:
+  port: 8087
+spring:
+  servlet:
+    multipart:
+      enabled: true
+      max-request-size: 50GB
+      max-file-size: 10GB
+  devtools:
+    restart:
+      enabled: true
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://42.192.203.132/weshr_pro
+    username: chenqw
+    password: 123456
+    hikari:
+      connection-timeout: 60000
+      validation-timeout: 3000
+      idle-timeout: 60000
+      login-timeout: 5
+      max-lifetime: 60000
+      maximum-pool-size: 10
+      minimum-idle: 10
+      read-only: false
+filesystem:
+  path: "E:/file/"

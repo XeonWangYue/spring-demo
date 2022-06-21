@@ -1,0 +1,10 @@
+server:
+  port: 8080
+spring:
+  servlet:
+    multipart:
+      enabled: true
+      max-request-size: 50GB
+      max-file-size: 10GB
+filesystem:
+  path: "/file/"
